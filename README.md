@@ -1,3 +1,3 @@
-# sportradar-api test
+# sportradar-api
 
 tbd
