@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
-import { ApiWsGateway } from './api-ws.gateway';
+import { TournamentsApiWsGateway } from './tournaments-api-ws.gateway';
+import { TournamentsService } from './tournaments.service';
 
 @Module({
   imports: [],
-  providers: [ApiWsGateway],
+  providers: [TournamentsApiWsGateway, TournamentsService],
 })
 export class ApiWsModule {}

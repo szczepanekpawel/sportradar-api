@@ -8,7 +8,11 @@
     socket.on('connect', function() {
       console.error('Connected');
 
-      socket.emit('get-data');
+      socket.emit('start', {name: 'test'});
+
+      // setTimeout(() => {
+      //   socket.emit('stop');
+      // }, 5000)
     });
 
     socket.on('data-package', function(data) {
